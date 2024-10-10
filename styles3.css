@@ -1,0 +1,298 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b88a8a;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+}
+
+.header img {
+    width: 100%;
+    border-radius: 15px;
+}
+.texto-animado {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 40%;
+    text-align: center;
+    color: rgb(116, 34, 34);
+    font-family: 'pacifico', cursive;
+}
+
+.texto-animado h1 {
+    font-size: 4em;
+    margin: 0;
+    opacity: 0;
+    animation: aparecerIzquierda 2s ease-in forwards;
+}
+
+.texto-animado h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+    margin-top: -10px;
+    opacity: 0;
+    animation: aparecerDerecha 2s ease-in forwards;
+    animation-delay: 2s;
+}
+
+
+.audio-player {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.mensaje-invitacion{
+    
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+}
+.mensaje-invitacion1{
+    text-align: center;
+    font-family: cursive;
+}
+
+.countdown {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.countdown div {
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid #b88a8a;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown div p {
+    margin: 0;
+    font-size: 12px;
+    color: #b88a8a;
+}
+
+.countdown div span {
+    font-size: 20px;
+    font-weight: bold;
+}
+.fecha-hora {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f9fa; /* Color de fondo claro */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 10px 15px; /* Espaciado interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin: 15px 0; /* Margen superior e inferior */
+}
+
+.fecha, .hora {
+    display: flex;
+    align-items: center; /* Centrar verticalmente el contenido */
+}
+
+.fecha i, .hora i {
+    margin-right: 8px; /* Espaciado entre icono y texto */
+    color: #6c757d; /* Color gris para los iconos */
+}
+.section {
+    text-align: center;
+    margin: 20px 0;
+}
+.sticker{
+    max-width: 100px; /* Establece un tamaño máximo para la imagen */
+    height: auto; /* Mantiene las proporciones para evitar deformaciones */
+    display: inline-block; /* Asegura que la imagen se comporte como un bloque en línea */
+}
+.mapa-ubicacion {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px; /* Ancho máximo del mapa */
+    height: 300px;
+    display: none; /* Oculto por defecto */
+}
+
+.section h2 {
+    margin-bottom: 10px;
+    font-family: cursive;
+}
+
+.section p {
+    margin-bottom: 10px;
+    font-family: cursive;
+}
+.btn-ubicacion{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #b88a8a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn-ubicacion:hover{
+    background-color: #9c6f6f;
+    
+}
+.button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #b88a8a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #9c6f6f;
+}
+.photos-preview {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 10px; /* Espacio entre las imágenes */
+    background-color:  #9c6f6f; /* Color de fondo que coincide con el de la página */
+    padding: 10px; /* Espacio interno para que las imágenes no toquen los bordes */
+   
+}
+.photos-preview img {
+    max-width: 100%; /* Hace que la imagen no exceda el ancho del contenedor */
+    height: auto;    /* Mantiene la proporción de aspecto */
+    margin: 0;     /* Espacio entre imágenes */
+    transition: transform 0.3s ease; /* Efecto de transición para la animación */
+}
+
+
+.photos-preview img:hover {
+    transform: scale(1.05); /* Aumentar la imagen al pasar el ratón */
+}
+.bank-details {
+    margin-top: 20px; /* Espacio superior para separación */
+    padding: 10px; /* Espacio interno */
+    background-color: #f9f9f9; /* Color de fondo */
+    border: 1px solid #ddd; /* Borde ligero */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: max-height 0.5s ease; /* Animación al mostrar */
+    overflow: hidden; /* Oculta el contenido extra */
+}
+    .section-formulario {
+        background-color: #f8f8f8;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    label {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        color: #555;
+    }
+
+    input[type="radio"] {
+        margin-right: 10px;
+    }
+
+    input[type="text"],
+    textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        resize: none;
+    }
+
+    input[type="text"]:focus,
+    textarea:focus {
+        border-color: #b88a8a;
+        outline: none;
+    }
+
+    button {
+        padding: 10px;
+        background-color: #b88a8a;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    button:hover {
+        background-color: #9c6f6f;
+    }
+
+
+
+
+@media screen and (max-width: 600px) {
+    .countdown {
+        justify-content: space-evenly;
+    }
+
+    .countdown div {
+        width: 70px;
+        height: 70px;
+    }
+}
+@keyframes aparecerIzquierda {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Animación para hacer aparecer desde la derecha */
+@keyframes aparecerDerecha {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
