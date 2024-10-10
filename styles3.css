@@ -40,12 +40,13 @@ body {
 }
 
 .texto-animado h2 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: pacifico, cursive;
     font-size: 2.5em;
     margin-top: -10px;
     opacity: 0;
     animation: aparecerDerecha 2s ease-in forwards;
     animation-delay: 2s;
+    color: rgb(116, 34, 34);
 }
 
 
