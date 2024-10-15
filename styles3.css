@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #b88a8a;
+    
 }
 
 .container {
@@ -25,7 +25,7 @@ body {
     position: absolute;
     text-align: center;
     width: 100%;
-    top: 40%;
+    top: 60%;
     text-align: center;
     color: rgb(116, 34, 34);
     font-family: 'pacifico', cursive;
@@ -66,7 +66,7 @@ body {
 .mensaje-invitacion1{
     text-align: center;
     font-family: cursive;
-    font-size: 1.4em;
+    font-size: 1.7em;
 }
 
 .countdown {
@@ -131,7 +131,7 @@ body {
 .section p {
     margin-bottom: 10px;
     font-family: cursive;
-    font-size: 1.4em;
+    font-size: 1.7em;
 }
 .sticker{
     max-width: 100px; /* Establece un tamaño máximo para la imagen */
@@ -216,6 +216,8 @@ body {
     }
     .section-formulario p{
         font-family: cursive;
+        color: black;
+        font-size: 1.7em;
     }
 
     h2 {
