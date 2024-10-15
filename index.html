@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Invitación</title>
     <link rel="stylesheet" href="styles3.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap"rel="stylesheet" />
+    <link rel="https://fonts.google.com/specimen/Meie+Script" href="">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
 
+    
 </head>
 
 <body>
@@ -21,7 +23,7 @@
                 <h1>Martina</h1>
                 <h2>Mis XV</h2>
             </div>
-            <img src="WhatsApp Image 2024-10-02 at 18.22.12.jpeg" alt="Foto de Martina" />
+            <img src="WhatsApp Image 2024-10-11 at 16.39.36.jpeg" alt="Foto de Martina" />
         </div>
 
         <!-- Audio -->
@@ -63,12 +65,12 @@
         <div class="section">
             <img class="sticker" src="partido.png" alt="" />
             <h2>CELEBRACIÓN</h2>
-            <p>La celebración será en Ohana Recepciones</p>
+            <p>La celebración será en Ohana Recepciones el Dia:</p>
             
             <div class="fecha-hora">
                 <div class="fecha">
                     <i class="fas fa-calendar-alt"></i>
-                    <span>20 SEP</span>
+                    <span>29 NOV</span>
                 </div>
                 <div class="hora">
                     <i class="fas fa-clock"></i>
@@ -96,8 +98,9 @@
 
         <!-- envia tus fotos para mi recuerdo -->
         <div class="section">
-            <h2>#XVPMARTINA</h2>
-            <p>Sube fotos de la fiesta para mi recuerdo</p>
+            <img class="sticker" src="camara.png" alt="">
+            <h2>#XVMARTINA</h2>
+            <p>Sube fotos de la fiesta para mi recuerdo. </p>
             <input type="file" id="file-upload" accept="image/*" />
             <button id="upload-button" class="button">Subir Foto</button>
             <div id="photos-preview" class="photos-preview"></div>
@@ -105,17 +108,18 @@
 
         <!-- Sección de Regalos -->
         <div class="section">
+            <img class="sticker" src="sorpresa.png" alt="">
             <h2>REGALOS</h2>
             <p>
-                Lo más importante es tu presencia, pero si deseas hacerme un regalo
-                aquí tienes mi sugerencia
+                Lo más importante para mi es tu presencia, pero si deseas hacerme un regalo
+                aquí te dejo mi Alias.
             </p>
             <button id="show-bank-details" class="button">Ver Datos Bancarios</button>
             <div id="bank-details" class="bank-details" style="display: none;">
                 <h3>Datos Bancarios</h3>
-                <p>Titular: Tu Nombre</p>
-                <p>CBU: 123-456789-01234567-89</p>
-                <p>Banco: Tu Banco</p>
+                <p>Titular: Martina Casco </p>
+                <p>CBU: 0000000000</p>
+                <p>Alias: mmmmmm</p>
             </div>
         </div>
 
@@ -124,142 +128,31 @@
             <h2>CONFIRMAR ASISTENCIA</h2>
             <form action="https://formspree.io/f/xzzbpnrb" method="POST" id="rsvp-form" onsubmit="return handleSubmit(event)">
                 <label>
-                    <input type="radio" name="asistencia" value="Sí, allí estaré" /> Sí, allí estaré
+                    <input type="radio" name="asistencia" value="Sí, allí estaré" /><p>Sí, allí estaré</p> 
                 </label>
                 <label>
-                    <input type="radio" name="asistencia" value="No podré asistir" /> No podré asistir
+                    <input type="radio" name="asistencia" value="No podré asistir" /> <p>No podré asistir</p>
                 </label>
             
-                <label for="name">Nombres y apellidos</label>
+                <label for="name"><p>Nombres y apellidos:</p></label>
                 <input type="text" name="nombre" id="name" placeholder="Ingresa tu nombre" required />
             
-                <label for="message">Mensaje para Martina</label>
+                <label for="message"><p>Mensaje para Martina:</p></label>
                 <textarea name="mensaje" id="message" placeholder="Escribe un mensaje para Martina" required></textarea>
             
                 <button type="submit">Enviar Respuesta</button>
             </form>
         </div>
+        <div class="mensaje-despedida">
+            <h2>!Te esperamos¡</h2>
+            <h3>Martina</h3>
+        </div>
     </div>
-
-    <script>
-        // Temporizador
-        const countdown = () => {
-            const countDate = new Date("Nov 29, 2024 21:00:00").getTime();
-            const now = new Date().getTime();
-            const gap = countDate - now;
-
-            const second = 1000;
-            const minute = second * 60;
-            const hour = minute * 60;
-            const day = hour * 24;
-
-            const days = Math.floor(gap / day);
-            const hours = Math.floor((gap % day) / hour);
-            const minutes = Math.floor((gap % hour) / minute);
-            const seconds = Math.floor((gap % minute) / second);
-
-            document.getElementById("days").innerText = days;
-            document.getElementById("hours").innerText = hours;
-            document.getElementById("minutes").innerText = minutes;
-            document.getElementById("seconds").innerText = seconds;
-        };
-
-        setInterval(countdown, 1000);
-
-        //funcion animacion de martina
-        document.addEventListener("DOMContentLoaded", function () {
-            document
-                .getElementById("mostrarMapa")
-                .addEventListener("click", function (event) {
-                    event.preventDefault();
-                    var mapa = document.getElementById("mapa");
-                    if (mapa.style.display === "none") {
-                        mapa.style.display = "block";
-                    } else {
-                        mapa.style.display = "none";
-                    }
-                });
-        });
-         //funcion subir fotos de la fiesta
-         document.getElementById('upload-button').addEventListener('click', async () => {
-            const fileInput = document.getElementById('file-upload');
-            const file = fileInput.files[0];
-
-            // Verificar si se ha seleccionado un archivo
-            if (!file) {
-                alert("Por favor, selecciona un archivo antes de subir.");
-                return;
-            }
-
-            const url = `https://api.cloudinary.com/v1_1/dobqfyqvx/image/upload`; // Reemplaza YOUR_CLOUD_NAME
-            const formData = new FormData();
-            formData.append('file', file);
-            formData.append('upload_preset', 'ml_default'); // Usa el nombre de tu preset aquí
-
-            try {
-                // Enviar la solicitud a Cloudinary
-                const response = await fetch(url, {
-                    method: 'POST',
-                    body: formData
-                });
-
-                // Obtener la respuesta de Cloudinary
-                const data = await response.json();
-
-                // Verificar si se recibió la URL de la imagen
-                if (data.secure_url) {
-                    // Crear un elemento de imagen para previsualizar la foto subida
-                    const imgElement = document.createElement('img');
-                    imgElement.src = data.secure_url;
-                    imgElement.alt = 'Uploaded Photo';
-
-                    // Añadir la imagen al contenedor de previsualización
-                    document.getElementById('photos-preview').appendChild(imgElement);
-                }
-            } catch (error) {
-                console.error("Error al subir la foto:", error);
-                alert("Error al subir la foto. Por favor, intenta de nuevo.");
-            }
-        });
-
-        //datos bancarios
-        document.getElementById('show-bank-details').addEventListener('click', () => {
-    const bankDetailsDiv = document.getElementById('bank-details');
-    const isVisible = bankDetailsDiv.style.display === 'block';
-
-    if (isVisible) {
-        bankDetailsDiv.style.display = 'none'; // Ocultar si ya está visible
-    } else {
-        bankDetailsDiv.style.display = 'block'; // Mostrar si está oculto
-        bankDetailsDiv.scrollIntoView({ behavior: 'smooth' }); // Desplazarse hacia abajo
-    }
-});
-//limpiar campos del form
-function handleSubmit(event) {
-        event.preventDefault();  // Evita el envío predeterminado para agregar la limpieza de campos
-        const form = event.target;
-
-        // Enviar el formulario manualmente
-        fetch(form.action, {
-            method: form.method,
-            body: new FormData(form),
-            headers: {
-                'Accept': 'application/json'
-            }
-        }).then(response => {
-            if (response.ok) {
-                alert('Respuesta enviada con éxito');
-                form.reset();  // Limpia todos los campos del formulario
-            } else {
-                alert('Hubo un problema al enviar el formulario');
-            }
-        }).catch(error => {
-            alert('Hubo un error al enviar la respuesta');
-        });
-
-        return false; // Prevenir el comportamiento por defecto
-    }
-    </script>
+    
+    <script src="script.js"></script>
 </body>
 
+<footer>
+    <div class="autor"><p>Desarrollado por Elias Aguirre.</p></div>
+</footer>
 </html>

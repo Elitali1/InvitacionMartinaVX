@@ -1,5 +1,4 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #b88a8a;
@@ -13,7 +12,6 @@ body {
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 .header {
     text-align: center;
 }
@@ -22,6 +20,7 @@ body {
     width: 100%;
     border-radius: 15px;
 }
+
 .texto-animado {
     position: absolute;
     text-align: center;
@@ -33,7 +32,9 @@ body {
 }
 
 .texto-animado h1 {
+    font-family: pacifico, cursive;
     font-size: 4em;
+    text-align: center;
     margin: 0;
     opacity: 0;
     animation: aparecerIzquierda 2s ease-in forwards;
@@ -41,7 +42,7 @@ body {
 
 .texto-animado h2 {
     font-family: pacifico, cursive;
-    font-size: 2.5em;
+    font-size: 3em;
     margin-top: -10px;
     opacity: 0;
     animation: aparecerDerecha 2s ease-in forwards;
@@ -59,12 +60,13 @@ body {
 .mensaje-invitacion{
     
     text-align: center;
-    font-family: 'Pacifico', cursive;
+    font-family: Pacifico, cursive;
     font-size: 3em;
 }
 .mensaje-invitacion1{
     text-align: center;
     font-family: cursive;
+    font-size: 1.4em;
 }
 
 .countdown {
@@ -109,6 +111,7 @@ body {
 .fecha, .hora {
     display: flex;
     align-items: center; /* Centrar verticalmente el contenido */
+    font-size: 2em;
 }
 
 .fecha i, .hora i {
@@ -118,6 +121,17 @@ body {
 .section {
     text-align: center;
     margin: 20px 0;
+}
+.section h2 {
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+.section p {
+    margin-bottom: 10px;
+    font-family: cursive;
+    font-size: 1.4em;
 }
 .sticker{
     max-width: 100px; /* Establece un tamaño máximo para la imagen */
@@ -132,15 +146,7 @@ body {
     display: none; /* Oculto por defecto */
 }
 
-.section h2 {
-    margin-bottom: 10px;
-    font-family: cursive;
-}
 
-.section p {
-    margin-bottom: 10px;
-    font-family: cursive;
-}
 .btn-ubicacion{
     display: block;
     width: 100%;
@@ -208,11 +214,15 @@ body {
         margin: 20px auto;
         text-align: center;
     }
+    .section-formulario p{
+        font-family: cursive;
+    }
 
     h2 {
         text-align: center;
         color: #333;
         margin-bottom: 20px;
+        font-size: 2em;
     }
 
     form {
@@ -261,8 +271,16 @@ body {
     button:hover {
         background-color: #9c6f6f;
     }
+    .mensaje-despedida{
+        font-family:  pacifico, cursive;
+        text-align: center;
+        font-size: 1.7em;
+    }
 
-
+    .autor{
+        text-align: center;
+        color: black;
+    }
 
 
 @media screen and (max-width: 600px) {
