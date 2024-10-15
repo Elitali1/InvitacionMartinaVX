@@ -5,12 +5,13 @@ body {
 }
 
 .container {
+    width: 90% ;
     max-width: 500px;
-    margin: auto;
+    margin: 20px auto;
     background-color: white;
     border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 .header {
     text-align: center;
@@ -286,6 +287,9 @@ body {
 
 
 @media screen and (max-width: 600px) {
+    .container{
+        padding: 10px;
+    }
     .countdown {
         justify-content: space-evenly;
     }
