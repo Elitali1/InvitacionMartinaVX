@@ -38,7 +38,7 @@ body {
 }
 
 .texto-animado h1 {
-    font-family: pacifico, cursive;
+    font-family: 'PriscillaScript', sans-serif;
     font-size: 4em;
     text-align: center;
     margin: 0;
@@ -47,7 +47,7 @@ body {
 }
 
 .texto-animado h2 {
-    font-family: pacifico, cursive;
+    font-family: 'PriscillaScript', sans-serif;
     font-size: 3em;
     margin-top: -10px;
     opacity: 0;
@@ -280,7 +280,7 @@ body {
         background-color: #9c6f6f;
     }
     .mensaje-despedida{
-        font-family:  pacifico, cursive;
+        font-family:  'PriscillaScript', sans-serif;
         text-align: center;
         font-size: 1.7em;
     }
@@ -290,6 +290,13 @@ body {
         color: black;
     }
 
+    @font-face {
+        font-family: 'PriscillaScript';
+        src: url('fonts/Priscilla Script.ttf') format('truetype'), 
+             url('fonts/Priscilla Script.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+    }
 
 @media screen and (max-width: 600px) {
     .container{
