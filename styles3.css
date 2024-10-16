@@ -189,7 +189,6 @@ body {
     gap: 10px; /* Espacio entre las imágenes */
     background-color:  #9c6f6f; /* Color de fondo que coincide con el de la página */
     padding: 10px; /* Espacio interno para que las imágenes no toquen los bordes */
-   
 }
 .photos-preview img {
     max-width: 100%; /* Hace que la imagen no exceda el ancho del contenedor */
@@ -298,7 +297,7 @@ body {
     @font-face {
         font-family: 'PriscillaScript';
         src: url('fonts/Priscilla Script.ttf') format('truetype'), 
-             url('fonts/Priscilla Script.otf') format('opentype');
+        url('fonts/Priscilla Script.otf') format('opentype');
         font-weight: normal;
         font-style: normal;
     }
