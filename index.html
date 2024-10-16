@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Invitación</title>
     <link rel="stylesheet" href="styles3.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap"rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet" />
     <link rel="https://fonts.google.com/specimen/Meie+Script" href="">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
 
-    
+
+
 </head>
 
 <body>
@@ -28,9 +29,9 @@
 
         <!-- Audio -->
         <div class="audio-player">
-        <audio controls autoplay >
-        <source src="/audio/Coldplay - A Sky Full Of Stars (Official audio) (1).mp3" type="audio/mpeg" />
-        </audio>
+            <audio controls autoplay>
+                <source src="/audio/Coldplay - A Sky Full Of Stars (Official audio) (1).mp3" type="audio/mpeg" />
+            </audio>
         </div>
 
         <div>
@@ -66,7 +67,7 @@
             <img class="sticker" src="/imagenes/partido.png" alt="" />
             <h2>CELEBRACIÓN</h2>
             <p>La celebración será en Ohana Recepciones el Dia:</p>
-            
+
             <div class="fecha-hora">
                 <div class="fecha">
                     <i class="fas fa-calendar-alt"></i>
@@ -77,7 +78,7 @@
                     <span>9:00 P.M.</span>
                 </div>
             </div>
-            
+
             <p>Av. San Martin 3453</p>
             <button id="mostrarMapa" class="btn-ubicacion">Ver Ubicación</button>
             <div id="mapa" class="mapa-ubicacion" style="display: none">
@@ -126,20 +127,27 @@
         <!-- Confirmación de Asistencia -->
         <div class="section-formulario">
             <h2>CONFIRMAR ASISTENCIA</h2>
-            <form action="https://formspree.io/f/xzzbpnrb" method="POST" id="rsvp-form" onsubmit="return handleSubmit(event)">
+            <form action="https://formspree.io/f/xzzbpnrb" method="POST" id="rsvp-form"
+                onsubmit="return handleSubmit(event)">
                 <label>
-                    <input type="radio" name="asistencia" value="Sí, allí estaré" /><p>Sí, allí estaré</p> 
+                    <input type="radio" name="asistencia" value="Sí, allí estaré" />
+                    <p>Sí, allí estaré</p>
                 </label>
                 <label>
-                    <input type="radio" name="asistencia" value="No podré asistir" /> <p>No podré asistir</p>
+                    <input type="radio" name="asistencia" value="No podré asistir" />
+                    <p>No podré asistir</p>
                 </label>
-            
-                <label for="name"><p>Nombres y apellidos:</p></label>
+
+                <label for="name">
+                    <p>Nombres y apellidos:</p>
+                </label>
                 <input type="text" name="nombre" id="name" placeholder="Ingresa tu nombre" required />
-            
-                <label for="message"><p>Mensaje para Martina:</p></label>
+
+                <label for="message">
+                    <p>Mensaje para Martina:</p>
+                </label>
                 <textarea name="mensaje" id="message" placeholder="Escribe un mensaje para Martina" required></textarea>
-            
+
                 <button type="submit">Enviar Respuesta</button>
             </form>
         </div>
@@ -148,11 +156,14 @@
             <h3>Martina</h3>
         </div>
     </div>
-    
+
     <script src="script.js"></script>
 </body>
 
 <footer>
-    <div class="autor"><p>Desarrollado por PIXELi, <img class="iconowp" src="/imagenes/whatsapp.png" alt="">1156180714</p></div>
+    <div class="autor">
+        <p>Desarrollado por PIXELi, <img class="iconowp" src="/imagenes/whatsapp.png" alt="">1156180714</p>
+    </div>
 </footer>
+
 </html>
