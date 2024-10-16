@@ -36,6 +36,15 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
 });
+//funcion para detener la musica cuando se abandona la pagina
+document.addEventListener('visibilitychange', function() {
+    var audio = document.getElementById('miReproductor');
+    
+    if (document.hidden) {
+      // Pausar la música cuando la pestaña no es visible
+      audio.pause();
+    }
+  });
  //funcion subir fotos de la fiesta
  const uploadedFiles = [];
 
