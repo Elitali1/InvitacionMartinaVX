@@ -39,7 +39,7 @@ body {
 
 .texto-animado h1 {
     font-family: 'PriscillaScript', sans-serif;
-    font-size: 4em;
+    font-size: 5.5em;
     text-align: center;
     margin: 0;
     opacity: 0;
@@ -48,7 +48,7 @@ body {
 
 .texto-animado h2 {
     font-family: 'PriscillaScript', sans-serif;
-    font-size: 3em;
+    font-size: 4.5em;
     margin-top: -10px;
     opacity: 0;
     animation: aparecerDerecha 2s ease-in forwards;
@@ -288,6 +288,11 @@ body {
     .autor{
         text-align: center;
         color: black;
+    }
+    .iconowp{
+    max-width: 20px; /* Establece un tamaño máximo para la imagen */
+    height: auto; /* Mantiene las proporciones para evitar deformaciones */
+    
     }
 
     @font-face {
