@@ -11,13 +11,10 @@ body {
 }
 
 .container {
-    width: 90%;
-    max-width: 500px;
-    margin: 0 auto;
-    background-color: white;
+    margin: auto;
+    padding: auto;
     border-radius: 15px;
-    padding: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    
 }
 
 .header {
@@ -34,8 +31,7 @@ body {
     position: absolute;
     text-align: center;
     width: 100%;
-    top: 60%;
-    text-align: center;
+    top: 50%;
     color: white;
     font-family: 'pacifico', cursive;
 }
