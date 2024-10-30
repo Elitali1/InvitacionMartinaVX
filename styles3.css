@@ -14,7 +14,6 @@ body {
     margin: auto;
     padding: auto;
     border-radius: 15px;
-    
 }
 
 .header {
@@ -31,7 +30,7 @@ body {
     position: absolute;
     text-align: center;
     width: 100%;
-    top: 50%;
+    top: 60%;
     color: white;
     font-family: 'pacifico', cursive;
 }
